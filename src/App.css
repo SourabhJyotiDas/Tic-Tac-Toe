@@ -1,0 +1,51 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 16px;
+  max-width: 320px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.board {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cell{
+  aspect-ratio: 1/1;
+  background-color: white;
+  border: 1px solid darkgray;
+  font-weight: bold;
+  font-size: 2rem;
+  vertical-align: middle;
+  color: lightblue;
+
+}
+.cell:not(:disabled){
+  cursor: pointer;
+}
+.cell:not(:disabled):hover{
+  background-color: lightblue;
+  transition: all 0.4s ease;
+}
+
+.btn{
+  padding: 10px 30px;
+  background-color: lightblue;
+  font: 500;
+  cursor: pointer;
+  
+}
+.btn:hover{
+  transition: all 0.4s ease;
+color: white;
+background: darkgreen;
+}
